@@ -1,0 +1,43 @@
+header {
+    height: 900px;
+}
+
+.heading-wrapper{
+    color: var( --text-color-light);
+    font-family: var( --heading-font);
+    position: relative;
+    top: 300px;
+    left: 300px;
+    z-index: 999;
+    max-width: 900px;
+    text-align: center;
+}
+
+h3{
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold)
+}
+
+h5 {
+    font-size: var(--font-size-subheading);
+    font-weight: 600;
+}
+
+header button {
+    background-color: var(--bg-light);
+    padding: 22px 36px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+
+header button a {
+    color: var(--bg-dark);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-bold);
+    text-transform: var( --font-uppercase-transform);
+}
+

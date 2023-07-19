@@ -1,0 +1,22 @@
+.fade-carousel {
+    display: flex;
+    position: relative;
+
+  }
+  
+  .fade-carousel img {
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    max-height: 800px;
+    filter: blur(5px);
+  }
+  
+  .fade-carousel img.active {
+    opacity: 1;
+  }
+  

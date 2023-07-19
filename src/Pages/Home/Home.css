@@ -1,0 +1,71 @@
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section{
+    text-align: center;
+}
+
+.hero-section h4 {
+    font-family: var(--heading-font);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color-gold);
+    margin-bottom: 10px;
+}
+
+.hero-section h3 {
+    font-family: var(--heading-font);
+    font-size: var(--font-size-heading);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-color-dark);
+    margin-bottom: 10px;
+    text-transform: var(--font-uppercase-transform);
+}
+
+.hero-section p {
+    max-width: 800px;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color-dark);
+}
+
+.hero-images-wrapper {
+    position: absolute;
+}
+
+.hero-images-wrapper img {
+    max-width: 350px;
+    max-height: 500px;
+    margin: 60px 20px;
+    border-radius: 5%;
+    position: relative;
+    top: 500px;
+}
+
+.hero-images-wrapper img:nth-child(2) {
+    position: relative;
+    top: 620px;
+  }
+
+.hero-section button {
+    background-color: var( --bg-gold);
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    position: relative; 
+    top: 70px
+}
+
+.hero-section button a {
+    color: var(--text-color-light);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-bold);
+    text-transform: var( --font-uppercase-transform);
+}
