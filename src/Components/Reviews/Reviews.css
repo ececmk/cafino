@@ -1,0 +1,66 @@
+.review {
+  background-color: var(--bg-gold);
+  margin-top: 100px;
+  width: 100%;
+  height: 320px;
+  color: var(--text-color-light);
+  position: relative;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+article p {
+  font-family: var(--secondary-font);
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.info {
+  font-size: var(--font-size-subheading);
+  height: 200px;
+}
+
+.author {
+  font-size: var(--font-size-text);
+}
+
+.quote-icon-right,
+.quote-icon- {
+  width: 80px;
+  height: 80px;
+}
+
+.quote-icon-left {
+  position: absolute;
+  top: 46px;
+  left: 200px;
+}
+
+.quote-icon-right {
+  position: absolute;
+  bottom: 46px;
+  right: 200px;
+}
+
+
+.prev-btn,
+.next-btn {
+  border-color: transparent;
+  background-color: transparent;
+  font-size: var(--font-size-text);
+  color: var(--text-color-light);
+}
+
+.prev-btn {
+    position: absolute;
+    top: 148px;
+    left: 50px;
+}
+
+.next-btn {
+    position: absolute;
+    top: 148px;
+    right: 50px;
+}
