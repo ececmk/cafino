@@ -66,3 +66,33 @@
     font-weight: var(--font-weight-bold);
     text-transform: var( --font-uppercase-transform);
 }
+
+.follow-insta {
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 760px;
+    background-image: url('../../../public/instagram-bg.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.follow-insta button {
+    padding: 70px 70px;
+    border: none;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: var( --bg-light);
+   
+}
+
+.follow-insta p {
+    width: 170px;
+    color: var( --bg-gold);
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-subheading);
+    font-weight: var(--font-weight-bold);
+}

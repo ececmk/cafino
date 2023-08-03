@@ -42,8 +42,15 @@ nav ul li a {
   border-radius: 10px;
 }
 
-.social-icons i {
+.social-icons {
+  display: flex;
+  margin-right: 52px;
+}
+.social-icon  {
   color: var(--bg-gold);
+  width: 32px;
+  height: 32px;
+  margin: 10px;
 }
 
 nav .menu {
