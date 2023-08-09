@@ -1,5 +1,5 @@
 .footer {
-    height: 340px;
+    padding: 40px 0;
     background-color: var(--bg-dark);
     color: var(--text-color-light);
     font-family: var(--body-font);
@@ -12,26 +12,24 @@
     justify-content: space-around;
     align-items: flex-start;
     text-align: center;
-    padding-top: 40px;
-    margin-bottom: 30px;
-
 }
 
-h1 {
+.footer-wrapper h1 {
     font-size: var(--font-size-heading);
 }
 
-h3 {
-    font-size: var(--font-size-subheading);
+.footer-wrapper h3  {
+    font-size: var(--font-size-text);
 }
 
-p {
+.footer p {
     text-align: center;
     line-height: 1.6;
 }
 
 .contact {
     display: flex;
+    align-items: center;
    
 }
 
