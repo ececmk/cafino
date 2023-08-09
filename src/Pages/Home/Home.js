@@ -25,7 +25,6 @@ const Home = () => {
       <section className='follow-insta'>
       <a href="https://www.instagram.com/cafino_muenchen/" target="_blank" rel="noreferrer"> <button><p>Follow Us on Instagram</p></button></a>
       </section>
-      <Footer />
     </div>
   )
 }

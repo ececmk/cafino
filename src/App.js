@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from "./Pages/Home/Home";
 import MenuPage from './Pages/Menu/MenuPage';
 import Contact from "./Pages/Contact/Contact";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
        <Route path="/menu" element={<MenuPage />} /> 
        <Route path="/contact" element={<Contact />} /> 
       </Routes>
+      <Footer />
     </Router>
   );
 }
