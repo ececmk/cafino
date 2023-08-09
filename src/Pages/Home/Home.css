@@ -49,14 +49,7 @@
     
   }
 
-.hero-section button {
-    background-color: var( --bg-gold);
-    padding: 20px 40px;
-    border: none;
-    border-radius: 5px;
-    position: relative; 
-    top: 60px
-}
+
 
 .hero-section button a {
     color: var(--text-color-light);

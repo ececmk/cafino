@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import Menu from '../../Components/MenuComponents/Menu/Menu'
-import Categories from '../../Components/MenuComponents/Menu/Categories';
+import Categories from '../../Components/MenuComponents/Categories/Categories';
 import items from './MenuData'
+import './MenuPage.css'
 
 
 const MenuPage = () => {
@@ -23,9 +24,9 @@ const allCategories = useMemo(() => ['all', ...new Set(items.map((item) => item.
 
   return (
      <main>
-      <section className="menu section">
+      <section className="menu-section">
         <div className="title">
-          <h2>our menu</h2>
+          <h2>OUR MENU</h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />

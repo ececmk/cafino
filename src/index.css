@@ -27,3 +27,28 @@
   --font-uppercase-transform: uppercase;
   
 }
+
+.btn-gold {
+  background-color: var( --bg-gold);
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  position: relative; 
+  top: 60px
+}
+
+
+.btn-light {
+    background-color: var(--bg-light);
+    color: var(--bg-dark);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-bold);
+    text-transform: var( --font-uppercase-transform);
+    padding: 22px 36px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+

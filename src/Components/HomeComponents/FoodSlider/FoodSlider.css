@@ -29,7 +29,7 @@ h2 {
     border-radius: 5px;
   }
   
-  button {
+ .btn-gold {
     display: flex;
       background-color: var(--bg-gold);
       padding: 16px 24px;

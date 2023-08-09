@@ -1,0 +1,13 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-btn {
+  margin: 10px 20px;
+  background-color: var( --bg-light);
+  border: none;
+  font-size: var(--font-size-subheading);
+  font-family: var(--body-font);
+  text-transform: capitalize;
+}

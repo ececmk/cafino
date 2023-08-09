@@ -1,4 +1,5 @@
 import React from 'react';
+import './Menu.css'
 
 const Menu = ({ items }) => {
   return (
@@ -12,11 +13,7 @@ const Menu = ({ items }) => {
               <header>
                 <h4>{title}</h4>
                 <h5> {subtitle} </h5>
-                {price.map((p, index) => (
-                  <h4 key={index} className='price'>
-                    {p.small} - {p.large}
-                  </h4>
-                ))}
+                <h4 className='price'>${price}</h4>
               </header>
               <p className='item-text'>{desc}</p>
             </div>

@@ -1,0 +1,18 @@
+.menu-section {
+    position: relative;
+    top: 180px;
+
+}
+
+.title h2 {
+  font-family: var(--heading-font);
+  font-size: var( --font-size-heading);
+  color: var( --text-color-dark);
+}
+
+.title .underline {
+    width: 200px;
+    height: 1px;
+    background-color: var( --text-color-dark);
+    margin: 0 auto;
+}
