@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import Menu from '../../Components/Menu/Menu'
-import Categories from '../../Components/Menu/Categories';
+import Menu from '../../Components/MenuComponents/Menu/Menu'
+import Categories from '../../Components/MenuComponents/Menu/Categories';
 import items from './MenuData'
 
 

@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from '../../Components/Header/Header'
-import Reviews from '../../Components/Reviews/Reviews';
-import FoodSlider from '../../Components/FoodSlider/FoodSlider';
-import Footer from '../../Components/Footer/Footer';
+import Header from '../../Components/HomeComponents/Header/Header'
+import Reviews from '../../Components/HomeComponents/Reviews/Reviews';
+import FoodSlider from '../../Components/HomeComponents/FoodSlider/FoodSlider';
 import './Home.css'
 
 const Home = () => {

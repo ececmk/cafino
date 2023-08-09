@@ -38,7 +38,7 @@ const ImageCarousel = () => {
         <img
           key={index}
           src={process.env.PUBLIC_URL + imageUrl}
-          alt={`Image ${index + 1}`}
+          alt='img'
           className={`fade-image ${index === currentIndex ? 'active' : ''}`}
         />
       ))}
