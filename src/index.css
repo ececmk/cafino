@@ -28,6 +28,10 @@
   
 }
 
+a {
+  text-decoration: none;
+}
+
 .btn-gold {
   background-color: var( --bg-gold);
   padding: 20px 40px;

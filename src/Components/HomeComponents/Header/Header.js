@@ -5,7 +5,7 @@ import ImageCarousel from './ImageCarousel/ImageCarousel'
 const Header = () => {
 
     return (
-        <header>
+        <header className='header'>
            <ImageCarousel />
            <div className='heading-wrapper'>
            <h5>Sip, Savor, Repeat: Cafino</h5>

@@ -1,4 +1,4 @@
-header {
+.header {
     height: 900px;
 }
 
@@ -13,12 +13,12 @@ header {
     text-align: center;
 }
 
-h3{
+.heading-wrapper h3{
     font-size: var(--font-size-heading);
     font-weight: var(--font-weight-bold)
 }
 
-h5 {
+.heading-wrapper h5 {
     font-size: var(--font-size-subheading);
     font-weight: 600;
 }
