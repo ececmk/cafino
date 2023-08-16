@@ -65,7 +65,6 @@ const Review = () => {
    
       )
     })}
-    
     </Slider>
     </article>
   );

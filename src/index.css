@@ -7,52 +7,55 @@
 :root {
   --bg-light: #ffffff;
   --bg-dark: #080202;
-  --bg-gold: #C59764;
-  --text-color-light:  #ffffff;
+  --bg-gold: #c59764;
+  --text-color-light: #ffffff;
   --text-color-dark: #080202;
-  --text-color-gold: #C59764;
+  --text-color-gold: #c59764;
+  --text-color-grey: #d8d9da;
   --spacing: 50px;
-  --heading-font: 'Cormorant Garamond', serif;
-  --body-font: 'Jost', sans-serif;
+  --heading-font: "Cormorant Garamond", serif;
+  --body-font: "Jost", sans-serif;
+  --secondary-font: Jost, sans-serif;
   --font-weight-bold: 600px;
   --font-weight-regular: 400;
   --font-size-heading: 92px;
   --font-size-subheading: 36px;
   --font-size-text: 24px;
-  --font-size-sm-text: 16px;
   --nav-font: Jost, sans-serif;
   --nav-font-size: 24px;
   --nav-font-weight: 400;
   --nav-font-letter-spacing: 1px;
   --font-uppercase-transform: uppercase;
-  
 }
 
 a {
   text-decoration: none;
 }
 
-.btn-gold {
-  background-color: var( --bg-gold);
-  padding: 20px 40px;
+.btn {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-bold);
+  text-transform: var(--font-uppercase-transform);
   border: none;
   border-radius: 5px;
-  position: relative; 
-  top: 60px
+  text-decoration: none;
 }
 
+.btn-gold {
+  background-color: var(--bg-gold);
+  color: var(--text-color-light);
+}
 
 .btn-light {
-    background-color: var(--bg-light);
-    color: var(--bg-dark);
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-size: var(--font-size-text);
-    font-weight: var(--font-weight-bold);
-    text-transform: var( --font-uppercase-transform);
-    padding: 22px 36px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
+  position: relative;
+  left: 300px;
+  background-color: var(--bg-light);
+  color: var(--text-color-dark);
+  margin-top: 30px;
 }
-

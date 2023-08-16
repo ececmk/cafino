@@ -16,7 +16,7 @@ const Contact = () => {
                     <FaPhone className='icon' />
                     <p>089 21567575</p>
                 </div>
-                <a href='https://goo.gl/maps/oQL5fwE1crzjUckG7' target="_blank" rel="noreferrer"> <button className="btn-gold">View in Google Maps</button></a>
+                <a href='https://goo.gl/maps/oQL5fwE1crzjUckG7' target="_blank" rel="noreferrer"> <button className="btn btn-gold">View in Google Maps</button></a>
             </div>
             <img className='contact-img' src='../../../images/cafino-outside.jpg' alt='Cafino Outside' />
         </section>
