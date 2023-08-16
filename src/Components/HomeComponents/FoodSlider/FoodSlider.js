@@ -73,7 +73,7 @@ const MultipleItems = () => {
                     <img className="food-img" src="../../../images/food-slider-images/image9.jpg" alt="food" />
                 </div>
             </Slider>
-            <a href="/menu"><button className="btn btn-gold">View Full Menu</button></a>
+           <button className="btn btn-gold" onClick={() => window.location.href = '/menu'}>View Full Menu</button>
         </div>
     );
 };

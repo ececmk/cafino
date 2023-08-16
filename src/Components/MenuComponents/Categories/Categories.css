@@ -11,4 +11,11 @@
   font-size: var(--font-size-text);
   font-family: var(--body-font);
   text-transform: capitalize;
+  transition: color 0.5s, transform 0.5s, border-bottom 0.5s;
+}
+
+.filter-btn:hover {
+  color: var(--text-color-gold);
+  border-bottom: 2px solid var( --text-color-gold) ;
+  transform: translateX(5px);
 }

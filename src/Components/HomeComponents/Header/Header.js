@@ -10,7 +10,7 @@ const Header = () => {
            <div className='heading-wrapper'>
            <h5>Sip, Savor, Repeat: Cafino</h5>
            <h3>Unleashing the Artistry of Coffee and Wine!</h3>
-           <a href='/menu'><button className='btn btn-light'>Discover More</button></a>
+          <button className='btn btn-light' onClick={() => window.location.href = '/menu'}>Discover More</button>
            </div>
           
         </header>
