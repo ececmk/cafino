@@ -42,20 +42,81 @@ a {
   font-size: var(--font-size-text);
   font-weight: var(--font-weight-bold);
   text-transform: var(--font-uppercase-transform);
-  border: none;
-  border-radius: 5px;
+  cursor: pointer;
   text-decoration: none;
+
 }
 
 .btn-gold {
+  position: relative;
   background-color: var(--bg-gold);
   color: var(--text-color-light);
 }
 
+.btn-gold:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -8px;
+  left: -8px;
+  border-top: 4px solid var(--bg-gold);
+  border-left: 4px solid var(--bg-gold);
+  transition: all 0.25s;
+}
+
+.btn-gold:hover:before,
+.btn-gold:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-gold:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -8px;
+  right: -8px;
+  border-bottom: 4px solid var(--bg-gold);
+  border-right: 4px solid var(--bg-gold);
+  transition: all 0.25s;
+}
+
 .btn-light {
   position: relative;
-  left: 300px;
+  left: 280px;
   background-color: var(--bg-light);
   color: var(--text-color-dark);
   margin-top: 30px;
+}
+
+.btn-light:before{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -8px;
+  left: -8px;
+  border-top: 4px solid var(--bg-light);
+  border-left: 4px solid var(--bg-light);
+  transition: all 0.25s;
+}
+
+.btn-light:hover:before,
+.btn-light:hover:after {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-light:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -8px;
+  right: -8px;
+  border-bottom: 4px solid var(--bg-light);
+  border-right: 4px solid var(--bg-light);
+  transition: all 0.25s;
 }
