@@ -14,12 +14,12 @@
   --spacing: 50px;
   --heading-font: 'Cormorant Garamond', serif;
   --body-font: 'Jost', sans-serif;
-  --secondary-font: Jost, sans-serif;
   --font-weight-bold: 600px;
   --font-weight-regular: 400;
   --font-size-heading: 92px;
   --font-size-subheading: 36px;
   --font-size-text: 24px;
+  --font-size-sm-text: 16px;
   --nav-font: Jost, sans-serif;
   --nav-font-size: 24px;
   --nav-font-weight: 400;

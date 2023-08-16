@@ -1,13 +1,14 @@
 .btn-container {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .filter-btn {
   margin: 10px 20px;
   background-color: var( --bg-light);
   border: none;
-  font-size: var(--font-size-subheading);
+  font-size: var(--font-size-text);
   font-family: var(--body-font);
   text-transform: capitalize;
 }
