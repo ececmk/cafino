@@ -19,17 +19,85 @@ nav ul {
 
 nav ul li {
   list-style: none;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+nav ul li:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background-color: var(--bg-gold);
+  transition: all 0.5s;
+}
+
+nav ul li:hover:before {
+  left:0;
+}
+
+nav ul li:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 4px;
+  background-color: var(--bg-gold);
+  transition: all 0.5s;
+}
+
+nav ul li:hover:after {
+  right: 0;
 }
 
 nav ul li a {
   display: block;
   text-decoration: none;
+  text-align: center;
   color: black;
-  padding: 12px 32px;
   font-family: var(--heading-font);
   font-size: var(--nav-font-size);
   font-weight: var(--nav-font-weight);
   text-transform: var(--font-uppercase-transform);
+}
+
+span:before {
+  content: '';
+  position: absolute;
+  top:-100%;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--bg-gold);
+  transition: all 0.5s;
+}
+
+nav ul li:hover span:before {
+  top: 0;
+}
+
+span:after {
+  content: '';
+  position: absolute;
+  bottom:-100%;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--bg-gold);
+  transition: all 0.5s;
+}
+
+nav ul li:hover span:after {
+  bottom: 0;
 }
 
 .cafinoLogo {

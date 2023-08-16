@@ -25,12 +25,15 @@ export const Navbar = () => {
             <ul className={menuOpen ? "open" : ""}>
                 <li>
                     <NavLink to="/">Home</NavLink>
+                    <span></span>
                 </li>
                 <li>
                     <NavLink to="/menu">Menu</NavLink>
+                    <span></span>
                 </li>
                 <li>
                     <NavLink to="/contact">Contact</NavLink>
+                    <span></span>
                 </li>
             </ul>
             <a href="/">
