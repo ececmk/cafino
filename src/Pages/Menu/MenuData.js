@@ -131,14 +131,14 @@ const menu = [
     title: 'BELSAZAR SPRITZ',
     category: 'aperatif',
     price: '7.50',
-    desc: `BELSAZAR ROSḖ, TONIC WATER, ORANGE`,
+    desc: `BELSAZAR ROSE, TONIC WATER, ORANGE`,
   },
   {
     id: 20,
     title: 'ROSEMARY',
     category: 'aperatif',
     price: '8.50',
-    desc: `BELSAZAR ROSḖ, COINTREAU, LIME JUICE, TONIC WATER, ROSEMARY, LIME`,
+    desc: `BELSAZAR ROSE, COINTREAU, LIME JUICE, TONIC WATER, ROSEMARY, LIME`,
   },
   {
     id: 21,
@@ -152,7 +152,7 @@ const menu = [
     title: 'BABELI',
     category: 'aperatif',
     price: '8.50',
-    desc: `BELSAZAR ROSḖ, LIMONCELLO, TONIC WATER, BASIL, LEMON`,
+    desc: `BELSAZAR ROSE, LIMONCELLO, TONIC WATER, BASIL, LEMON`,
   },
   {
     id: 23,
@@ -187,42 +187,42 @@ const menu = [
     title: 'FLAMMKUCHEN ELSÄSSER - ART',
     category: 'flammkuchen',
     price:  '9.90',
-    desc: `FRESCH CREAM, BACON, ONIONS`,
+    desc: `FRESH CREAM, BACON, ONIONS`,
   },
   {
     id: 28,
     title: 'FLMMKUCHEN ZIEGE',
     category: 'flammkuchen',
     price: '9.90',
-    desc: `FRESCH CREAM, GOAT CHEESE, HONEY, ROSEMARY`,
+    desc: `FRESH CREAM, GOAT CHEESE, HONEY, ROSEMARY`,
   },
   {
     id: 29,
     title: 'FLAMMKUCHEN ZUCCHIN',
     category: 'flammkuchen',
     price: '10.90',
-    desc: `FRESCH CREAM, ZUCCHINI, TOMATOES, PARMESAN, PINE NUTS`,
+    desc: `FRESH CREAM, ZUCCHINI, TOMATOES, PARMESAN, PINE NUTS`,
   },
   {
     id: 30,
     title: 'FLAMMKUCHEN VEGANO (VEGAN)',
     category: 'flammkuchen',
     price: '11.90',
-    desc: `FRESCH CREAM VEGAN, ZUCCINI, TOMATOES, PESTO, PINE NUTS`,
+    desc: `FRESH CREAM VEGAN, ZUCCINI, TOMATOES, PESTO, PINE NUTS`,
   },
   {
     id: 31,
     title: 'FLAMMKUCHEN PARMA',
     category: 'flammkuchen',
     price: '12.90',
-    desc: `FRESCH CREAM, PARMA HAM, ARUGULA, PARMESAN CHEESE`,
+    desc: `FRESH CREAM, PARMA HAM, ARUGULA, PARMESAN CHEESE`,
   },
   {
     id: 32,
     title: 'FLAMMKUCHEN MARE',
     category: 'flammkuchen',
     price:  '12.90',
-    desc: `FRESCH CREAM, SALMON, MASCARPONE, SPRING ONIONS`,
+    desc: `FRESH CREAM, SALMON, MASCARPONE, SPRING ONIONS`,
   },
   {
     id: 33,
@@ -230,7 +230,7 @@ const menu = [
     category: 'flammkuchen',
     price: '10.90',
           
-    desc: `FRESCH CREAM, APPLE, CINNAMON, SUGAR, CALVADOS`,
+    desc: `FRESH CREAM, APPLE, CINNAMON, SUGAR, CALVADOS`,
   },
   {
     id: 34,
@@ -294,7 +294,7 @@ const menu = [
     category: 'salad',
     price: '3.90',
           
-    desc: `OUR SALADS ARE SERVED WITH A BALSAMIC MUSTARD DRESSING`,
+    desc: `OUR SALAD IS SERVED WITH A BALSAMIC MUSTARD DRESSING`,
   },
   {
     id: 42,

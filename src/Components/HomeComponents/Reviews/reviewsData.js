@@ -1,13 +1,13 @@
 const reviews = [
     {
       id: 1,
-      name: 'Figen A',
+      name: 'Figen A.',
       text:
         'I liked it very much. It is a clean place, the staff is very friendly and caring.',
     },
     {
       id: 2,
-      name: 'Alisha Chawla',
+      name: 'Alisha C.',
       text:
         'Highly recommended!! Very nice cafe and friendly staff.',
     },
@@ -25,13 +25,13 @@ const reviews = [
       },
       {
         id: 5,
-        name: 'Grace Gamze Oeg',
+        name: 'Grace Gamze O.',
         text:
           'Always nice to have a short break at the Cafino. The food is delicious, the cake a dream, the service attentive. We always feel welcome.',
       },
       {
         id: 6,
-        name: 'Susana Calvo',
+        name: 'Susana C.',
         text:
           'Very special place, mix of lovely deco shop and cafe, breakfast, healthy lunch and dinner. Highly recommend!',
       },
