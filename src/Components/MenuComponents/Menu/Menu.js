@@ -2,6 +2,7 @@ import React from 'react';
 import './Menu.css';
 
 const Menu = ({ items }) => {
+  console.log('Received items:', items);
   return (
     <div className='section-center'>
       {items.map((menuItem) => {
@@ -23,3 +24,4 @@ const Menu = ({ items }) => {
 };
 
 export default Menu;
+

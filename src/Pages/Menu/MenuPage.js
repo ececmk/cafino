@@ -4,11 +4,8 @@ import Categories from '../../Components/MenuComponents/Categories/Categories';
 import items from './MenuData'
 import './MenuPage.css'
 
-
 const MenuPage = () => {
-
-
-const allCategories = useMemo(() => ['all', ...new Set(items.map((item) => item.category))], [items]);
+  const allCategories = useMemo(() => ['all', ...new Set(items.map((item) => item.category))], [items]);
 
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
@@ -22,8 +19,9 @@ const allCategories = useMemo(() => ['all', ...new Set(items.map((item) => item.
     setMenuItems(newItems);
   };
 
+
   return (
-     <main>
+    <main>
       <section className="menu-section">
         <div className="title">
           <h2>OUR MENU</h2>

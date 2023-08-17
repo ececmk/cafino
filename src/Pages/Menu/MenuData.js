@@ -432,7 +432,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 58,
+    id: 59,
     title: 'COFFEE LARGE',
     category: 'hot beverages',
     price:  '4.40',
@@ -440,7 +440,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 59,
+    id: 60,
     title: 'CAPPUCCINO',
     category: 'hot beverages',
     price:  '3.10',
@@ -448,7 +448,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 60,
+    id: 61,
     title: 'LATTE MACCHIATO',
     category: 'hot beverages',
     price:  '3.90',
@@ -456,7 +456,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 61,
+    id: 62,
     title: 'COFFEE WITH MILK',
     category: 'hot beverages',
     price: '3.90',
@@ -464,7 +464,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 62,
+    id: 63,
     title: 'EARLY GREY',
     category: 'hot beverages',
     price: '4.10',
@@ -472,7 +472,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 63,
+    id: 64,
     title: 'MOUNTAIN HERBS TEA',
     category: 'hot beverages',
     price:  '4.10',
@@ -480,7 +480,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 64,
+    id: 65,
     title: 'GREEN TEA',
     category: 'hot beverages',
     price: '4.10',
@@ -488,7 +488,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 65,
+    id: 66,
     title: 'WILD BERRIES TEA',
     category: 'hot beverages',
     price: '4.10',
@@ -496,7 +496,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 66,
+    id: 67,
     title: 'STRAWBERRY-MINT TEA',
     category: 'hot beverages',
     price:  '4.10',
@@ -504,7 +504,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 67,
+    id: 68,
     title: 'STRAWBERRY-MINT TEA',
     category: 'hot beverages',
     price:  '4.10',
@@ -512,7 +512,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 68,
+    id: 69,
     title: 'PEACH TEA',
     category: 'hot beverages',
     price:  '4.10',
@@ -520,7 +520,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 69,
+    id: 70,
     title: 'HOT CHOCOLATE',
     category: 'hot beverages',
     price:  '4.00',
@@ -528,7 +528,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 70,
+    id: 71,
     title: 'CHAI LATTE',
     category: 'hot beverages',
     price: '4.00',
@@ -536,7 +536,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 70,
+    id: 72,
     title: 'KINDERCAPPUCINO (UP TO 10 YEARS OLD)',
     category: 'hot beverages',
     price:  '0.80',
@@ -544,7 +544,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 71,
+    id: 73,
     title: 'WATER (0.25L)',
     category: 'cold beverages',
     price: '2.70',
@@ -552,7 +552,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 72,
+    id: 74,
     title: 'WATER (0.75L)',
     category: 'cold beverages',
     price: '6.00',
@@ -560,7 +560,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 73,
+    id: 75,
     title: 'APPLE JUICE',
     category: 'cold beverages',
     price:  '2.90',
@@ -568,7 +568,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 74,
+    id: 76,
     title: 'JOHANNISBEERE JUICE',
     category: 'cold beverages',
     price:  '2.90',
@@ -576,7 +576,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 75,
+    id: 77,
     title: 'MARACUJA JUICE',
     category: 'cold beverages',
     price: '2.90',
@@ -584,7 +584,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 76,
+    id: 78,
     title: 'RHABARBER JUICE',
     category: 'cold beverages',
     price: '2.90',
@@ -592,7 +592,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 77,
+    id: 79,
     title: 'JUICE SHCORLE',
     category: 'cold beverages',
     price: '2.80',
@@ -600,7 +600,7 @@ const menu = [
     desc: `APPLE, JOHANNISBEERE, MARAJUCA, RHABARBER, HOLUNDER`,
   },
   {
-    id: 78,
+    id: 80,
     title: 'COLA (0.33L)',
     category: 'cold beverages',
     price: '3.70',
@@ -608,7 +608,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 79,
+    id: 81,
     title: 'CALYPSO (0.33L)',
     category: 'cold beverages',
     price:  '3.70',
@@ -616,7 +616,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 80,
+    id: 82,
     title: 'ALPENGRANDLER (0.33L)',
     category: 'cold beverages',
     price:  '3.70',
@@ -624,7 +624,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 80,
+    id: 83,
     title: 'ROSE LIMONADE (0.33L)',
     category: 'cold beverages',
     price: '3.90',
@@ -632,7 +632,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 81,
+    id: 84,
     title: 'FRITZ COLA - SUGAR FREE (0.33L)',
     category: 'cold beverages',
     price:  '3.70',
@@ -641,14 +641,14 @@ const menu = [
     desc: ``,
   },
   {
-    id: 82,
+    id: 85,
     title: 'BASIL-GINGER LEMONADE (0.25L)',
     category: 'cold beverages',
     price: '4.10',
     desc: ``,
   },
   {
-    id: 83,
+    id: 86,
     title: 'ANANAS-MINT LEMONADE (0.25L)',
     category: 'cold beverages',
     price:  '4.10',
@@ -656,7 +656,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 84,
+    id: 87,
     title: 'FRESH ORANGE JUICE (0.20L)',
     category: 'cold beverages',
     price: '4.50',
@@ -664,7 +664,7 @@ const menu = [
     desc: ``,
   },
   {
-    id: 85,
+    id: 88,
     title: 'DIE HELLE (0.33L)',
     category: 'cold beverages',
     price: '3.70',
@@ -672,7 +672,7 @@ const menu = [
     desc: `THE BAVARIAN CLASSIC`,
   },
   {
-    id: 85,
+    id: 89,
     title: 'NATURRADLER (0.33L)',
     category: 'cold beverages',
     price:  '3.70',
