@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
+import LanguageSelector from '../../../Languages/LanguageSelector/ LanguageSelector'
 
 export const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -39,6 +40,7 @@ export const Navbar = () => {
             <a href="/">
                 <img src="/cafino-logo.jpg" alt="Cafino Logo" className="cafinoLogo"></img>
             </a>
+            <LanguageSelector />
             <div className="social-icons">
             <a href="https://www.instagram.com/cafino_muenchen/" target="_blank" rel="noreferrer"><FaInstagram className="social-icon"/></a>
             <a href="https://www.facebook.com/profile.php?id=100063610090685" target="_blank" rel="noreferrer"><FaFacebook className="social-icon" /></a>
