@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { useLanguage } from '../../../Languages/LanguageContext'; 
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
 import LanguageSelector from '../../../Languages/LanguageSelector/ LanguageSelector'
 
+
 export const Navbar = () => {
+
+    const { translate } = useLanguage();
+
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -25,15 +30,15 @@ export const Navbar = () => {
         <nav>
             <ul className={menuOpen ? "open" : ""}>
                 <li>
-                    <NavLink to="/">Home</NavLink>
+                    <NavLink to="/">{translate('nav-home')}</NavLink>
                     <span></span>
                 </li>
                 <li>
-                    <NavLink to="/menu">Menu</NavLink>
+                    <NavLink to="/menu">{translate('nav-menu')}</NavLink>
                     <span></span>
                 </li>
                 <li>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact">{translate('nav-contact')}</NavLink>
                     <span></span>
                 </li>
             </ul>

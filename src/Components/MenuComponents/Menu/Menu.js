@@ -1,8 +1,10 @@
 import React from 'react';
+import { useLanguage } from '../../../Languages/LanguageContext'; 
 import './Menu.css';
 
 const Menu = ({ items }) => {
-  console.log('Received items:', items);
+  const { translate, language } = useLanguage();
+  
   return (
     <div className='section-center'>
       {items.map((menuItem) => {
@@ -14,7 +16,7 @@ const Menu = ({ items }) => {
                 <h4>{title}</h4>
                 <p className='item-text'>{desc}</p>
               </header>
-              <h4 className='price'>${price}</h4>         
+              <h4 className='price'>{price}€</h4>         
             </div>
           </article>
         );

@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { useLanguage } from '../../../Languages/LanguageContext'; 
 import { FaStore, FaPhone } from 'react-icons/fa';
 import './Footer.css'
 
 const Footer = () => {
+
+    const { translate } = useLanguage();
+
     return (
         <main className='footer'>
             <section className='footer-wrapper' >
@@ -11,17 +15,17 @@ const Footer = () => {
                     <p>Café & Vinothek</p>
                 </div>
                 <div>
-                    <h3>Working Hours</h3>
-                    <p>Monday - Closed</p>
-                    <p>Tuesday - Closed</p>
-                    <p>Wednesday - 10:00 - 18:00</p>
-                    <p>Thursday 10:00 - 22:00</p>
-                    <p>Friday - 10:00 - 22:00</p>
-                    <p>Saturday - 10:00 - 18:00</p>
-                    <p>Sunday - Closed</p>
+                    <h3>{translate('working-hours-title')}</h3>
+                    <p>{translate('working-hours-m')}</p>
+                    <p>{translate('working-hours-tu')}</p>
+                    <p>{translate('working-hours-w')}</p>
+                    <p>{translate('working-hours-th')}</p>
+                    <p>{translate('working-hours-f')}</p>
+                    <p>{translate('working-hours-sa')}</p>
+                    <p>{translate('working-hours-su')}</p>
                 </div>
                 <div>
-                    <h3>Address</h3>
+                    <h3>{translate('Address')}</h3>
                     <div className='contact'>
                         <FaStore className='icon' />
                         <p>Truderinger Str. 277, 81825 München</p>

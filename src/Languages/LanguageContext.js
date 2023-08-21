@@ -7,7 +7,7 @@ const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
   const [language, setLanguage] = useState('de'); 
-  const languages = { en, de }; // Tüm çevirileri bir nesnede sakla
+  const languages = { en, de }; 
 
   const translate = (key) => languages[language][key] || key;
 

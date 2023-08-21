@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
-import reviewsData from './reviewsData';
+import React from 'react';
+import { useLanguage } from '../../../Languages/LanguageContext';
 import { FaChevronLeft, FaChevronRight, FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import reviewsData from './reviewsData';
 import './Reviews.css';
 
 const Review = () => {
+  
+  const { language } = useLanguage();
+
   const settings = {
     dots: false,
     arrows: true,
@@ -16,56 +20,29 @@ const Review = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    nextArrow:   <FaChevronRight />,
+    nextArrow: <FaChevronRight />,
     prevArrow: <FaChevronLeft />,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
+      // ...
     ]
-}
-  
+  };
 
   return (
     <article className='review'>
-    <Slider {...settings} >
-    {reviewsData.map((review)=> {
-      return(
-        <div>
-      <span className='quote-icon-left'>
-        <FaQuoteLeft />
-      </span>
-      <p className='info'>{review.text}</p>
-      <p className='author'>{review.name}</p>
-      <span className='quote-icon-right'>
-        <FaQuoteRight />
-      </span>
-      </div>
-   
-      )
-    })}
-    </Slider>
+      <Slider {...settings}>
+        {reviewsData.map((review) => (
+          <div key={review.id}>
+            <span className='quote-icon-left'>
+              <FaQuoteLeft />
+            </span>
+            <p className='info'>{language === 'en' ? review.text_en : review.text_de}</p>
+            <p className='author'>{review.name}</p>
+            <span className='quote-icon-right'>
+              <FaQuoteRight />
+            </span>
+          </div>
+        ))}
+      </Slider>
     </article>
   );
 };

@@ -1,10 +1,14 @@
 import React from "react";
+import { useLanguage } from '../../../Languages/LanguageContext'; 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './FoodSlider.css'
 
 const MultipleItems = () => {
+
+  const { translate } = useLanguage();
+
     const settings = {
         dots: true,
         arrows: false,
@@ -43,7 +47,7 @@ const MultipleItems = () => {
 
     return (
         <div className="slide-wrapper">
-            <h2>Coffee, baked goods or wine... Whatever you're looking for!</h2>
+            <h2>{translate('food-slider-title')}</h2>
             <Slider {...settings} >
                 <div>
                     <img className="food-img" src="../../../images/food-slider-images/image1.jpg" alt="food" />
@@ -73,7 +77,7 @@ const MultipleItems = () => {
                     <img className="food-img" src="../../../images/food-slider-images/image9.jpg" alt="food" />
                 </div>
             </Slider>
-           <button className="btn btn-gold" onClick={() => window.location.href = '/menu'}>View Full Menu</button>
+           <button className="btn btn-gold" onClick={() => window.location.href = '/menu'}>{translate('home-view-menu-btn')}</button>
         </div>
     );
 };
