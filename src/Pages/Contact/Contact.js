@@ -1,13 +1,17 @@
 import React from 'react'
+import { useLanguage } from '../../Languages/LanguageContext'; 
 import './Contact.css'
 import { FaStore, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
+
+    const { translate } = useLanguage();
+
     return (
         <section className='contact-container'>
             <div className='contact-wrapper'>
-                <h4 >Our Location</h4>
-                <p>We warmly invite you to reach out to us for any inquiries or to make a reservation. Our team is dedicated to ensuring your experience with us is exceptional. To secure your spot, please feel free to give us a call. We greatly appreciate your interest and look forward to serving you soon.</p>
+                <h4>{translate('contact-title')}</h4>
+                <p>{translate('contact-body')}</p>
                 <div className='contact-info'>
                     <FaStore className='icon' />
                     <p>Truderinger Str. 277,81825 München</p>
@@ -16,7 +20,7 @@ const Contact = () => {
                     <FaPhone className='icon' />
                     <p>089 21567575</p>
                 </div>
-                <a href='https://goo.gl/maps/oQL5fwE1crzjUckG7' target="_blank" rel="noreferrer"> <button className="btn btn-gold">View in Google Maps</button></a>
+                <a href='https://goo.gl/maps/oQL5fwE1crzjUckG7' target="_blank" rel="noreferrer"> <button className="btn btn-gold">{translate('contact-btn')}</button></a>
             </div>
             <img className='contact-img' src='../../../images/cafino-outside.jpg' alt='Cafino Outside' />
         </section>
