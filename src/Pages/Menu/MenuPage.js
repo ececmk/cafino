@@ -1,10 +1,16 @@
 import React, { useState, useMemo } from 'react';
-import Menu from '../../Components/MenuComponents/Menu/Menu'
+import { useLanguage } from '../../Languages/LanguageContext';
+import Menu from '../../Components/MenuComponents/Menu/Menu';
 import Categories from '../../Components/MenuComponents/Categories/Categories';
-import items from './MenuData'
-import './MenuPage.css'
+import items_en from '../../MenuData/menu_en.json';
+import items_de from '../../MenuData/menu_de.json';
+import './MenuPage.css';
 
 const MenuPage = () => {
+  const { language, translate } = useLanguage();
+
+  const items = language === 'en' ? items_en : items_de;
+
   const allCategories = useMemo(() => ['all', ...new Set(items.map((item) => item.category))], [items]);
 
   const [menuItems, setMenuItems] = useState(items);
@@ -19,12 +25,11 @@ const MenuPage = () => {
     setMenuItems(newItems);
   };
 
-
   return (
     <main>
       <section className="menu-section">
         <div className="title">
-          <h2>OUR MENU</h2>
+          <h2>{translate('menu-title')}</h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
@@ -34,4 +39,4 @@ const MenuPage = () => {
   )
 }
 
-export default MenuPage
+export default MenuPage;

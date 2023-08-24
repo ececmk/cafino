@@ -1,9 +1,14 @@
 import React from 'react';
 import { useLanguage } from '../../../Languages/LanguageContext';
+import items_en from '../../../MenuData/menu_en.json';
+import items_de from '../../../MenuData/menu_de.json';
 import './Categories.css';
 
 const Categories = ({ categories, filterItems }) => {
+  console.log(categories)
   const { language } = useLanguage();
+
+  const items = language === 'en' ? items_en : items_de;
 
   return (
     <div className="btn-container">
@@ -14,7 +19,7 @@ const Categories = ({ categories, filterItems }) => {
             className="filter-btn"
             key={index}
             onClick={() => filterItems(category)}>
-            {language === 'en' ? category.category_en : category.category_de}
+            {category}
           </button>
         );
       })}

@@ -1,9 +1,13 @@
 import React from 'react';
 import { useLanguage } from '../../../Languages/LanguageContext'; 
 import './Menu.css';
+import items_en from '../../../MenuData/menu_en.json';
+import items_de from '../../../MenuData/menu_de.json';
 
-const Menu = ({ items }) => {
+const Menu = ( ) => {
   const { translate, language } = useLanguage();
+
+  const items = language === 'en' ? items_en : items_de;
   
   return (
     <div className='section-center'>
