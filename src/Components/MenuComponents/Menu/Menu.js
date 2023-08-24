@@ -1,17 +1,19 @@
-import React from 'react';
-import { useLanguage } from '../../../Languages/LanguageContext'; 
+import React, { useEffect, useState } from 'react';
 import './Menu.css';
-import items_en from '../../../MenuData/menu_en.json';
-import items_de from '../../../MenuData/menu_de.json';
 
-const Menu = ( ) => {
-  const { translate, language } = useLanguage();
+const Menu = ({ items }) => {
 
-  const items = language === 'en' ? items_en : items_de;
+
+  const [currentItems, setCurrentItems] = useState(items);
+
+  useEffect(() => {
+
+    setCurrentItems(items);
+  }, [items]);
   
   return (
     <div className='section-center'>
-      {items.map((menuItem) => {
+      {currentItems.map((menuItem) => {
         const { id, title, desc, price } = menuItem;
         return (
           <article key={id} className='menu-item'>
@@ -30,4 +32,3 @@ const Menu = ( ) => {
 };
 
 export default Menu;
-

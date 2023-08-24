@@ -11,7 +11,9 @@ const MenuPage = () => {
 
   const items = language === 'en' ? items_en : items_de;
 
+
   const allCategories = useMemo(() => ['all', ...new Set(items.map((item) => item.category))], [items]);
+
 
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
@@ -21,9 +23,13 @@ const MenuPage = () => {
       setMenuItems(items);
       return;
     } 
-    const newItems = items.filter((item) => item.category === category);
-    setMenuItems(newItems);
+    //console.log(items)
+    const filteredItems = items.filter((item) => item.category === category);
+    setMenuItems(filteredItems);
+   console.log(filteredItems)
   };
+  
+
 
   return (
     <main>
