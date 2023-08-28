@@ -1,8 +1,27 @@
-.btn-lng{
-    width: 50px;
-    height: 50px;
-    border: none;
-    position: relative;
-    left: 580px;
+.language-selector {
+  display: flex;
+  position: relative;
+  left: 580px;
+  font-family: var(--body-font);
 }
 
+.btn-lng {
+  width: 50px;
+  height: 50px;
+  border: none;
+  color: var(--text-color-gold);
+  background-color: transparent;
+  transition: color 0.5s, transform 0.5s, border-bottom 0.5s;
+}
+
+.btn-lng:hover {
+    color: var(--text-color-gold);
+    border-bottom: 2px solid var( --text-color-gold) ;
+    transform: translateX(5px);
+}
+
+.language-selector p {
+  color: var(--text-color-gold);
+  position: relative;
+  top: 12px;
+}

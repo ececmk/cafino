@@ -17,6 +17,7 @@ const LanguageSelector = () => {
       <button className='btn-lng btn-de' onClick={() => handleLanguageChange('de')} disabled={language === 'de'}>
         DE
       </button>
+      <p> / </p>
       <button className='btn-lng btn-en'  onClick={() => handleLanguageChange('en')} disabled={language === 'en'}>
         EN
       </button>
