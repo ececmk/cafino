@@ -21,9 +21,9 @@
   --font-size-heading: 92px;
   --font-size-subheading: 36px;
   --font-size-text: 24px;
-  --font-size-heading-mobile: 36px;
-  --font-size-subheding-mobile: 24px;
-  --font-size-text: 14px;
+  --font-size-heading-mobile: 24px;
+  --font-size-subheding-mobile: 16px;
+  --font-size-text-mobile: 14px;
   --nav-font: Jost, sans-serif;
   --nav-font-size: 24px;
   --nav-font-weight: 400;
@@ -36,22 +36,24 @@ a {
 }
 
 .btn {
-  max-width: 300px;
-  max-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--secondary-font);
   font-size: var(--font-size-text);
-  font-weight: var(--font-weight-bold);
   text-transform: var(--font-uppercase-transform);
   cursor: pointer;
   text-decoration: none;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 5px;
 }
 
 .btn-gold {
+  display: flex;
   position: relative;
   background-color: var(--bg-gold);
+  margin: 30px auto;
   color: var(--text-color-light);
 }
 
@@ -87,11 +89,12 @@ a {
 
 .btn-light {
   position: relative;
-  left: 280px;
+  display: flex;
   background-color: var(--bg-light);
+  margin: 30px auto;
   color: var(--text-color-dark);
-  margin-top: 30px;
 }
+
 
 .btn-light:before{
   content: '';
@@ -123,10 +126,10 @@ a {
   transition: all 0.25s;
 }
 
-@media only screen and (max-width: 640px) {
-  .btn-light {
-    position: relative;
-    left: 120px;
-  
+@media (max-width: 767px) {
+  .btn {
+    font-size: var(--font-size-text-mobile);
+    padding: 8px 12px;
   }
+
 }

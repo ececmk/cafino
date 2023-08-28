@@ -29,7 +29,6 @@
 
 @media only screen and (max-width: 640px) {
   .language-selector{
-    bottom: 12px;
-    left: 140px;
+    left: -60px;
   }
 }

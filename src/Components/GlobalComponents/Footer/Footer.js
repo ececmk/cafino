@@ -10,11 +10,11 @@ const Footer = () => {
     return (
         <main className='footer'>
             <section className='footer-wrapper' >
-                <div>
+                <div className='footer-title'>
                     <h1>Cafino</h1>
                     <p>Café & Vinothek</p>
                 </div>
-                <div>
+                <div className='working-hours'>
                     <h3>{translate('working-hours-title')}</h3>
                     <p>{translate('working-hours-m')}</p>
                     <p>{translate('working-hours-tu')}</p>

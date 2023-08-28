@@ -1,48 +1,41 @@
 .slide-wrapper {
-    width: 100%; 
-    margin-top: 100px;
-    margin-bottom: 30px;
-  }
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
 
 .slide-wrapper h2 {
-    color: var( --text-color-gold);
-    font-family: var(--heading-font);
-    font-size: var(--font-size-subheading);
-    font-weight: var(--font-weight-bold);
+  color: var(--text-color-gold);
+  font-family: var(--heading-font);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-bold);
   text-align: center;
 }
-  
-  .slick-slider {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 60px;
-  }
 
-  .slick-slide > div {
-    padding: 10px;
-    margin: 10px 10px;
-  }
+.slick-slider {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
 
-  .slide-wrapper .food-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
- .btn-gold {
-    display: flex;
-      background-color: var(--bg-gold);
-      padding: 16px 24px;
-      border: none;
-      border-radius: 5px;
-      margin: 30px auto;
-      color: var(--text-color-light);
-      font-family: var(--secondary-font);
-      font-size: var(--font-size-text);
-      font-weight: var(--font-weight-bold);
-      text-transform: var( --font-uppercase-transform);
-  }
+.slick-slide > div {
+  padding: 10px;
+  margin: 10px 10px;
+}
 
-.slide-wrapper a{
+.slide-wrapper .food-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.slide-wrapper a {
   text-decoration: none;
+}
+
+@media (max-width: 767px) {
+
+.slide-wrapper h2 {
+  font-size: var(--font-size-heading-mobile);
+}
 }

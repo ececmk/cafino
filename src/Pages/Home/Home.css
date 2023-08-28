@@ -1,91 +1,107 @@
-.hero-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-section{
-    text-align: center;
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-section h4 {
-    font-family: var(--heading-font);
-    font-size: var(--font-size-text);
-    font-weight: var(--font-weight-bold);
-    color: var(--text-color-gold);
-    margin-bottom: 10px;
+  font-family: var(--heading-font);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color-gold);
+  margin-bottom: 10px;
 }
 
 .hero-section h3 {
-    font-family: var(--heading-font);
-    font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-bold);
-    color: var(--text-color-dark);
-    margin-bottom: 10px;
-    text-transform: var(--font-uppercase-transform);
+  font-family: var(--heading-font);
+  font-size: var(--font-size-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color-dark);
+  margin-bottom: 10px;
+  text-transform: var(--font-uppercase-transform);
 }
 
 .hero-section p {
-    max-width: 800px;
-    font-family: var(--secondary-font);
-    font-size: var(--font-size-text);
-    font-weight: var(--font-weight-regular);
-    color: var(--text-color-dark);
+  max-width: 800px;
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-text);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color-dark);
 }
 
 .hero-images-wrapper img {
-    max-width: 350px;
-    max-height: 500px;
-    margin: 60px 20px;
-    border-radius: 5%;
-    position: relative;
- 
+  max-width: 350px;
+  max-height: 500px;
+  margin: 60px 20px;
+  border-radius: 5%;
+  position: relative;
 }
 
 .hero-images-wrapper img:nth-child(2) {
-    position: relative;
-    top:100px;
-    
-  }
-
-
-
-.hero-section button a {
-    color: var(--text-color-light);
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-size: var(--font-size-text);
-    font-weight: var(--font-weight-bold);
-    text-transform: var( --font-uppercase-transform);
+  position: relative;
+  top: 100px;
 }
 
 .follow-insta {
-    margin-top: 120px;
-    margin-bottom: 100px;
-    width: 100%;
-    height: 760px;
-    background-image: url('../../../public/instagram-bg.png');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden; 
+  margin-top: 120px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 760px;
+  background-image: url("../../../public/instagram-bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
 .follow-insta button {
-    padding: 70px 70px;
-    border: none;
-    border-radius: 50%;
-    margin: 0 auto;
-    background-color: var( --bg-light);
-   
+  padding: 70px 70px;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: var(--bg-light);
 }
 
 .follow-insta p {
-    width: 170px;
-    color: var( --bg-gold);
-    font-family: var(--secondary-font);
-    font-size: var(--font-size-subheading);
-    font-weight: var(--font-weight-bold);
+  width: 170px;
+  color: var(--bg-gold);
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-subheading);
+  font-weight: var(--font-weight-bold);
+}
+
+@media (max-width: 767px) {
+  .hero-section h4 {
+    font-size: var(--font-size-text-mobile);
+  }
+  .hero-section h3 {
+    font-size: var(--font-size-heading-mobile);
+  }
+
+  .hero-section p {
+    max-width: 400px;
+    font-size: var(--font-size-text-mobile);
+  }
+
+  .hero-images-wrapper img {
+    max-width: 120px;
+    max-height: 250px;
+    margin: 30px 10px;
+  }
+
+  .follow-insta {
+    height: 300px;
+  }
+
+  .follow-insta button {
+    padding: 30px 30px;
+  }
+
+  .follow-insta p {
+    width: 70px;
+    font-size: var(--font-size-subheading-mobile);
+  }
 }

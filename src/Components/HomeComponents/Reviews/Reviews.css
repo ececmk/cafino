@@ -5,12 +5,10 @@
   height: 360px;
   color: var(--text-color-light);
   position: relative;
-  
 }
 
 .review p {
   font-family: var(--secondary-font);
-  max-width: 800px;
   margin: 0 auto;
   padding-top: 50px;
   text-align: center;
@@ -43,7 +41,7 @@
   right: 200px;
 }
 
-.slick-arrow{
+.slick-arrow {
   border-color: transparent;
   background-color: transparent;
   font-size: var(--font-size-text);
@@ -54,13 +52,39 @@
 }
 
 .slick-prev {
-    position: absolute;
-    top: 128px;
-    left: 50px;
+  position: absolute;
+  top: 148px;
+  left: 50px;
 }
 
 .slick-next {
-    position: absolute;
-    top: 148px;
-    right: 50px;
+  position: absolute;
+  top: 148px;
+  right: 50px;
+}
+
+@media (max-width: 767px) {
+  .review {
+    height: 240px;
+  }
+
+  .review p {
+    padding-top: 50px;
+    max-width: 300px;
+  }
+
+  .info {
+    font-size: var(--font-size-subheading-mobile);
+    height: 120px;
+  }
+
+  .author {
+    font-size: var(--font-size-text-mobile);
+  }
+
+  .slick-arrow {
+    font-size: var(--font-size-text-mobile);
+    width: 20px;
+    height: 20px;
+  }
 }
