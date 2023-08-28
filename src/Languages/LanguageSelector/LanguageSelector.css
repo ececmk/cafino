@@ -10,6 +10,7 @@
   height: 50px;
   border: none;
   color: var(--text-color-gold);
+  font-size: var(--body-font);
   background-color: transparent;
   transition: color 0.5s, transform 0.5s, border-bottom 0.5s;
 }
@@ -24,4 +25,10 @@
   color: var(--text-color-gold);
   position: relative;
   top: 12px;
+}
+
+@media only screen and (max-width: 640px) {
+  .language-selector{
+    left: 200px;
+  }
 }

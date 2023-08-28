@@ -10,12 +10,18 @@ export const Navbar = () => {
 
     const { translate } = useLanguage();
 
-    const [menuOpen, setMenuOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    const toggleMobileMenu = () => {
+        setIsMobile(!isMobile);
+      };
+    
+    
 
     useEffect(() => {
         const handleScroll = () => {
-            if (menuOpen) {
-                setMenuOpen(false);
+            if (isMobile) {
+                setIsMobile(false);
             }
         };
 
@@ -24,11 +30,11 @@ export const Navbar = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, [menuOpen]);
+    }, [isMobile]);
 
     return (
         <nav>
-            <ul className={menuOpen ? "open" : ""}>
+            <ul className={isMobile ? 'nav-links-mobile' : 'nav-links'}>
                 <li>
                     <NavLink to="/">{translate('nav-home')}</NavLink>
                     <span></span>
@@ -50,8 +56,8 @@ export const Navbar = () => {
             <a href="https://www.instagram.com/cafino_muenchen/" target="_blank" rel="noreferrer"><FaInstagram className="social-icon"/></a>
             <a href="https://www.facebook.com/profile.php?id=100063610090685" target="_blank" rel="noreferrer"><FaFacebook className="social-icon" /></a>
             </div>
-            <button className="menu" onClick={() => setMenuOpen(!menuOpen)}>
-                {menuOpen ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+            <button className="menu" onClick={toggleMobileMenu}>
+                {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
             </button>
         </nav>
     );

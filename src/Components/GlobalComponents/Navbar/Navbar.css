@@ -129,3 +129,61 @@ nav .menu {
   width: 64px;
   height: 64px;
 }
+
+@media only screen and (max-width: 640px) {
+
+  nav .menu {
+    display: block;
+    background-color: transparent;
+    color: var(--text-color-gold);
+    border: none;
+  }
+
+  .cafinoLogo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    width: 120px;
+    height: 60px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-mobile {
+ 
+    display: block;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    background-color: var(--bg-light);
+    left: 0;
+    top: 100px;
+    transition: all 0.5s ease-out;
+  }
+
+  .nav-links li {
+    padding: 32px;
+    margin: 6px 0;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  nav ul li a {
+    color: var(--text-color-gold);
+    text-align: start;
+  }
+
+  .menu i {
+    position: absolute;
+    font-size: 36px;
+    top: 15px;
+    right: 25px;
+  }
+
+  .social-icon {
+    display: none;
+  }
+}
