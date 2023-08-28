@@ -15,27 +15,43 @@
 
 .heading-wrapper h3{
     font-size: var(--font-size-heading);
-    font-weight: var(--font-weight-bold)
+    font-weight: var(--font-weight-bold);
 }
 
 .heading-wrapper h5 {
     font-size: var(--font-size-subheading);
-    font-weight: 600;
-}
-
-.btn-light {
-    background-color: var(--bg-light);
-    color: var(--bg-dark);
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-size: var(--font-size-text);
     font-weight: var(--font-weight-bold);
-    text-transform: var( --font-uppercase-transform);
-    padding: 22px 36px;
-    border: none;
-    border-radius: 5px;
-    margin-top: 30px;
 }
 
 
 
+@media only screen and (max-width: 640px) {
+
+    .heading-wrapper{
+       
+        position: relative;
+        top: 150px;
+        left: 100px;
+        z-index: 999;
+        max-width: 400px;
+        text-align: center;
+    }
+    .heading-wrapper h3{
+        font-size: var(--font-size-heading-mobile);
+    }
+    .heading-wrapper h5 {
+        font-size: var(--font-size-subheading-mobile); 
+    }
+
+    .btn-light {
+        
+        font-size: var(--font-size-text-mobile);
+        padding: 12px 18px;
+        border: none;
+        border-radius: 5px;
+       
+    }
+    
+    
+    
+}
