@@ -23,14 +23,11 @@ const MenuPage = () => {
       setMenuItems(items);
       return;
     } 
-    //console.log(items)
     const filteredItems = items.filter((item) => item.category === category);
     setMenuItems(filteredItems);
    console.log(filteredItems)
   };
   
-
-
   return (
     <main>
       <section className="menu-section">

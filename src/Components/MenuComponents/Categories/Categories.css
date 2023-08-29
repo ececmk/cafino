@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .filter-btn {
@@ -18,4 +19,17 @@
   color: var(--text-color-gold);
   border-bottom: 2px solid var( --text-color-gold) ;
   transform: translateX(5px);
+}
+
+@media (max-width: 767px) {
+
+  .btn-container {
+    margin-top: 20px;
+ 
+  }
+  
+ .filter-btn{
+  font-size: var(--font-size-text-mobile);
+ }
+
 }

@@ -17,7 +17,7 @@
 }
 
 .item-info header {
-    width: 560px;
+  width: 560px;
 }
 
 .item-info h4 {
@@ -29,5 +29,27 @@
 .item-info p {
   font-family: var(--body-font);
   font-size: var(--font-size-sm-text);
+
   opacity: 0.5;
+}
+
+@media (max-width: 767px) {
+  .section-center {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .menu-item {
+    width: calc(100% - 30px);
+    margin-top: 10px;
+  }
+
+  .item-info h4 {
+    font-size: var(--font-size-text-mobile);
+  }
+
+  .item-info p {
+    font-size: var(--font-size-text-mobile);
+  }
 }

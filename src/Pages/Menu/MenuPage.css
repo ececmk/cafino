@@ -16,3 +16,19 @@
   background-color: var(--text-color-dark);
   margin: 0 auto;
 }
+
+@media (max-width: 767px) {
+
+  .menu-section {
+    margin: 100px 20px;
+  }
+  
+  .title h2 {
+    font-size: var(--font-size-heading-mobile);
+  }
+
+  .title .underline {
+    width: 100px;
+  
+  }
+}

@@ -10,12 +10,9 @@ const Categories = ({ categories, filterItems }) => {
 
   const items = language === 'en' ? items_en : items_de;
 
-  
-
   return (
     <div className="btn-container">
       {categories.map((category, index) => {
-        //console.log(category)
         return (
           <button
             type="button"
